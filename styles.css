@@ -6,7 +6,6 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    padding: 20px;
 }
 
 .container {
@@ -15,8 +14,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
-    max-width: 400px; /* Limit the maximum width */
 }
 
 label {
@@ -30,7 +27,6 @@ input {
     width: calc(100% - 20px); /* Adjust for padding */
     padding: 10px;
     box-sizing: border-box;
-    font-size: 1em; /* Increase font size for better readability on mobile */
 }
 
 button {
@@ -41,9 +37,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
-    width: 100%; /* Make buttons full width */
-    box-sizing: border-box;
-    font-size: 1em; /* Increase font size for better readability on mobile */
 }
 
 button:hover {
@@ -52,7 +45,7 @@ button:hover {
 
 #results, #total {
     margin-top: 20px;
-    font-size: 1.5em;  /* Increase font size */
+    font-size: 1.5em;
     color: #333;
 }
 
@@ -63,19 +56,4 @@ button:hover {
 
 .green-label {
     color: green;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-
-    button {
-        padding: 10px;
-        font-size: 1em;
-    }
-
-    #results, #total {
-        font-size: 1.2em;
-    }
 }
