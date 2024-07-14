@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    padding: 20px; /* Add padding for better spacing on mobile devices */
 }
 
 .container {
@@ -14,6 +15,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width */
 }
 
 label {
@@ -24,6 +27,9 @@ label {
 
 input {
     margin-bottom: 10px;
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding for better touch experience */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 button {
@@ -34,6 +40,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
+    width: 100%; /* Make buttons full width */
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -42,6 +50,30 @@ button:hover {
 
 #results, #total {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 2em;  /* Increase font size */
     color: #333;
+}
+
+.result-item {
+    color: red;
+    font-weight: bold;
+}
+
+.green-label {
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #results, #total {
+        font-size: 1.2em;
+    }
 }
